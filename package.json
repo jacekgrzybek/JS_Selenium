@@ -1,0 +1,14 @@
+{
+  "name": "js_selenium",
+  "version": "1.0.0",
+  "description": "Selenium Test Danfos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacek Grzybek",
+  "license": "MIT",
+  "dependencies": {
+    "selenium-webdriver": "^4.3.1"
+  }
+}
