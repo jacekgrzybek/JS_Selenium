@@ -22,3 +22,13 @@ async function Test2() {
     await driver.findElement(By.xpath("//*[contains(text(),'.pdf')]"));
     await driver.quit();
 }
+
+async function Test3(){
+    let driver = await new Builder().forBrowser('chrome').build();
+    await driver.get("https://www.danfoss.com/en/");
+    var width = 500;
+    var height = 800;
+    await driver.manage().window().setRect({x: 0, y: 0, width: width, height: height});
+    await !driver.findElement(By.xpath("//*[contains(text(),'Quick links')]")).isDisplayed();
+    await driver.quit();
+}
