@@ -32,3 +32,7 @@ async function Test3(){
     await !driver.findElement(By.xpath("//*[contains(text(),'Quick links')]")).isDisplayed();
     await driver.quit();
 }
+
+Test1();
+Test2();
+Test3();
